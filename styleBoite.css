@@ -1,0 +1,142 @@
+
+/*--------------------- LAYOUT ------------------------*/
+.row{
+	margin-right:-14px;
+	margin-left:-14px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	/*border: 1px solid black;*/
+}
+
+.Barre1 {
+	height: 75px;
+	vertical-align:middle;
+	background-color: #00BFFF;
+	padding: 0px;
+	margin: 0px;
+	color:white;
+}
+
+.center{
+	display: block;
+	width:430px;
+	height:430px;
+}
+
+.blocimage0 {          
+      display : table-cell;
+      vertical-align : middle;
+      text-align:center;
+      width:104px;
+      height:68px;
+}
+
+.blocimage1 {          
+      display : table-cell;
+      vertical-align : middle;
+      text-align:center;
+      width:430px;
+      height:466px;
+}
+
+.blocimage2 {         
+      display : table-cell;
+      vertical-align : middle;
+      text-align:center;
+      width:213px;
+      height:214px;
+}
+
+.blocimage3 {         
+      display : table-cell;
+      vertical-align : middle;
+      text-align:center;
+      width:434px;
+      height:214px;
+}
+
+.navbar{
+	display: block;
+	width: 100%;
+	min-height:20px;
+	height: 34px;
+	vertical-align: bottom;
+	padding-left: 30px;
+	padding-right:20px;
+	margin: auto;
+	text-align:left;
+	opacity: 0.7;
+	border-radius:0px;
+}
+/*-------------------- Usage as a mixin -----------------*/
+img {
+  vertical-align: middle;
+  /*border: 1px solid red;*/
+}
+
+/*--------------------- Mixin ----------------------------*/
+.clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+/*--------------------- Usage -----------------------------*/
+.container {
+  .clearfix();
+}
+.center-block-fleche{
+	margin-top:7px;
+	margin-bottom:7px;
+	
+}
+.blanc{
+	background-color: white;
+	color:white;
+}
+.gris{
+	background-color: #A0A5A4;
+}
+.jaune{
+	background-color:#ECF407;
+	color:black;
+}
+
+.rouge{
+	background-color:#E9522D;
+	
+}
+.rougeclair{
+	background-color:#E99580;
+	color:white;
+}
+
+.vert{
+	background-color:#75EC81;
+}
+.vertclair{
+	background-color:#80EFBB;
+	color:black;
+}
+.violet{
+	background-color:#AB71ED;
+	color:white;
+}
+.violetclair{
+	background-color:#CBB4F3;
+}
+.bleue{
+	background-color:#2383F0;
+	color:white;
+}
+
+.bleueclaire{
+	background-color:#809AEF;
+	color:white;
+}
