@@ -2,144 +2,173 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8">
-    <title>ExoDivs</title>
-	
-    <!-- Bootstrap -->
-    
-	<!--<link href="bootstrap-3.3.6/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">-->
-	<link href="bootstrap.min.css" rel="stylesheet" media="screen">
-	<link href="styleBoite.css" rel="stylesheet" type="text/css" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Semaine 6 Exercice 2</title>
 
+    <!-- Bootstrap -->
+    <link href="bootstrap-3.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="styleBoite.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
   <body>
-    
-	
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-xs-1 bleue">
-				<div class="block-center">
-				<span class="blockimage0"><img src="http://www.photoshoplus.fr/images/tutoriels/photoshoplus/personnage-decoupe-01.jpg" width="70%" height="70%" class="img-responsive img-circle center-block" alt="Responsive image"/></span>
+    <header>
+			<div id="User">
+				<div id="avatar">
+					<img src="http://www.photoshoplus.fr/images/tutoriels/photoshoplus/personnage-decoupe-01.jpg" class="img-responsive img-circle center-block" alt="Responsive image"/></span>
+				</div>
+				<div id="Nom">
+					<h2>Divshot</h2>
+				</div>
+				<div id="Score">
+					<h2>8 pts</h2>
+				</div>
 			</div>
-			</div>		
-			<div class="col-xs-10 bleue">
-				<h2>Divshot</h2>
-			</div>
-			<div class="col-xs-1 bleue">
-				<h2>8 pts</h2>
+	</header>
+	<main>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-4 col-xs-12">
+					<div class="row">
+						<div class="col-xs-12">	
+							<div id="leaderboard" class="card">
+								<div class="card_content">
+									<img src="https://www.crowds.io/assets/images/leaderboard2.png"  class="img-responsive card_content_image center-block" alt="Responsive image"/>
+								</div>
+								<div class="card_footer">
+									<a href="#">Leaderboard<span class="glyphicon glyphicon-arrow-right i" aria-hidden="true"></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6">
+							<div id="entertainment" class="card">
+								<div class="card_content">
+									<img src="http://cdn.graphicsfactory.com/clip-art/image_files/image/3/630003-eps_9_drama_masks.gif" class="img-responsive card_content_image center-block" alt="Responsive image"/>
+								</div>
+								<div class="card_footer">
+									<a href="#">Entrertainment<span class="glyphicon glyphicon-triangle-right i" aria-hidden="true"></span></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6">
+							<div id="sports" class="card">
+								<div class="card_content">
+									<img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Sports_portal_bar_icon.png" class="img-responsive card_content_image center-block" alt="Responsive image" />
+								</div>
+								<div class="card_footer">
+									<a href="#">Sports<span class="glyphicon glyphicon-triangle-right i" aria-hidden="true"></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<div class="row">
+						<div class="col-xs-6">
+							<div id="food" class="card">
+								<div class="card_content">
+									<img src="http://www.foodclipart.com/food_clipart_images/fast_food_hot_dog_french_fries_and_a_drink_0515-0901-2114-1956_SMU.jpg" class="img-responsive card_content_image center-block"  alt="Responsive image"/>
+								</div>
+								<div class="card_footer">
+									<a href="#">Food & Drink<span class="glyphicon glyphicon-triangle-right i" aria-hidden="true"></span></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6">
+							<div id="generalknowledge" class="card">
+								<div class="card_content">
+									<img src="http://icliparts.com/cliparts/6iy/oXR/6iyoXRbnT.gif" class="img-responsive card_content_image center-block" alt="Responsive image" />
+								</div>
+								<div class="card_footer">
+									<a href="#">General Knowledge<span class="glyphicon glyphicon-triangle-right i" aria-hidden="true"></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">	
+							<div id="geography" class="card">
+								<div class="card_content">
+									<img src="http://clipartfreefor.com/cliparts/geography-clip-art/cliparti1_geography-clip-art_05.jpg" class="img-responsive card_content_image center-block" alt="Responsive image"/>
+								</div>
+								<div class="card_footer">
+									<a href="#">Geography<span class="glyphicon glyphicon-triangle-right i" aria-hidden="true"></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<div class="row">
+						<div class="col-xs-12">
+							<div id="history" class="card">
+								<div class="card_content">
+									<img src="http://previews.123rf.com/images/red33/red330710/red33071000027/1799776-stegosaurus-Dinosaur-Vector-Illustration-Stock-Vector-cute.jpg" class="img-responsive card_content_image center-block" alt="Responsive image"/>
+								</div>
+								<div class="card_footer">
+									<a href="#">History<span class="glyphicon glyphicon-triangle-right i" aria-hidden="true"></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6">
+							<div id="science" class="card">
+								<div class="card_content">
+									<img src="http://www.clipartbest.com/cliparts/9c4/aKj/9c4aKjncE.gif" class="img-responsive card_content_image center-block"  alt="Responsive image"/>
+								</div>
+								<div class="card_footer">
+									<a href="#">Science and Nature<span class="glyphicon glyphicon-triangle-right i" aria-hidden="true"></span></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6">
+							<div id="tv" class="card">
+								<div class="card_content">
+									<img src="https://www.offerpop.com/wp-content/uploads/2014/08/Movies.jpg" class="img-responsive card_content_image center-block" alt="Responsive image" />
+								</div>
+								<div class="card_footer">
+									<a href="#">TV & Movies<span class="glyphicon glyphicon-triangle-right i" aria-hidden="true"></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6">
+							<div id="music" class="card">
+								<div class="card_content">
+									<img src="http://clipart.dj/600/vector-clipart-of-a-cartoon-heart-character-listening-to-music-from-boom-box-by-bnp-design-studio-14279.jpg" class="img-responsive card_content_image center-block"  alt="Responsive image"/>
+								</div>
+								<div class="card_footer">
+									<a href="#">Music<span class="glyphicon glyphicon-triangle-right i" aria-hidden="true"></span></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6">
+							<div id="profile" class="card">
+								<div class="card_content">
+									<img src="http://cache3.asset-cache.net/xc/465702967.jpg?v=2&c=IWSAsset&k=2&d=SHfsyJ7dM0oSd9bhLPhdAd7h5X6x4P3-3BYQ3dNeDgyJCyLo0qSffKCd0grVZbEi0" class="img-responsive card_content_image center-block" alt="Responsive image" />
+								</div>
+								<div class="card_footer">
+									<a href="#">Profile<span class="glyphicon glyphicon-arrow-right i" aria-hidden="true"></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-xs-4">
-				<div class="row">
-					<div class="col-xs-12 blanc">
-						<div class="row">
-							<span class="blocimage1"><img src="https://www.crowds.io/assets/images/leaderboard2.png" width="40%" height="40%" class="img-responsive center-block" alt="Responsive image"/></span>
-							<div class="navbar navbar-inverse">
-								<p> Leaderboard <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></p>
-							</div>
-						</div>
-					</div>
-				</div>									
-				<div class="row">
-					<div class="col-xs-6 rougeclair">
-						<div class="row">
-							<span class="blocimage2"><img src="http://cdn.graphicsfactory.com/clip-art/image_files/image/3/630003-eps_9_drama_masks.gif" width="50%" height="50%" class="img-responsive center-block" alt="Responsive image"/></span>
-							<div class="navbar navbar-inverse">
-								<p> Entertainment <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-6 violet">
-						<div class="row">
-							<span class="blocimage2"><img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Sports_portal_bar_icon.png" width="50%" height="50%" class="img-responsive center-block" alt="Responsive image" /></span>
-							<div class="navbar navbar-inverse">
-								<p> Sports <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-4">
-				<div class="row">
-					<div class="col-xs-6 vertclair">
-						<div class="row">
-							<span class="blocimage2"><img src="http://www.foodclipart.com/food_clipart_images/fast_food_hot_dog_french_fries_and_a_drink_0515-0901-2114-1956_SMU.jpg" width="50%" height="50%" class="img-responsive center-block"  alt="Responsive image"/></span>
-							<div class="navbar navbar-inverse">
-								<p> Food & Drink <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-6 jaune">
-						<div class="row">
-							<span class="blocimage2"><img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Sports_portal_bar_icon.png" width="50%" height="50%" class="img-responsive center-block" alt="Responsive image"/></span>
-							<div class="navbar navbar-inverse">
-								<p> General Knowledge <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 rougeclair">
-						<div class="row">
-							<span class="blocimage1"><img src="http://clipartfreefor.com/cliparts/geography-clip-art/cliparti1_geography-clip-art_05.jpg" width="" height="" class="img-responsive center-block" alt="Responsive image"/></span>
-							<div class="navbar navbar-inverse">
-								<p> Geography <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></p>
-							</div>
-						</div>
-					</div>
-				</div>	
-			</div>
-			<div class="col-xs-4">
-				<div class="row">
-					<div class="col-xs-12 bleueclaire">
-						<div class="row">
-							<span class="blocimage3"><img src="http://previews.123rf.com/images/red33/red330710/red33071000027/1799776-stegosaurus-Dinosaur-Vector-Illustration-Stock-Vector-cute.jpg" width="40%" height="40%" class="img-responsive center-block" alt="Responsive image"/></span>
-							<div class="navbar navbar-inverse">
-								<p> History <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></p>
-							</div>
-						</div>	
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-6 vertclair">
-						<div class="row">
-							<span class="blocimage2"><img src="http://www.foodclipart.com/food_clipart_images/fast_food_hot_dog_french_fries_and_a_drink_0515-0901-2114-1956_SMU.jpg" width="40%" height="40%" class="img-responsive center-block"  alt="Responsive image"/></span>
-							<div class="navbar navbar-inverse">
-								<p> Science and Nature <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-6 violet">
-						<div class="row">
-							<span class="blocimage2"><img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Sports_portal_bar_icon.png" width="40%" height="40%" class="img-responsive center-block" alt="Responsive image"/></span>
-							<div class="navbar navbar-inverse">
-								<p> TV & Movies <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-6 bleueclaire">
-						<div class="row">
-							<span class="blocimage2"><img src="http://www.foodclipart.com/food_clipart_images/fast_food_hot_dog_french_fries_and_a_drink_0515-0901-2114-1956_SMU.jpg" width="40%" height="40%" class="img-responsive center-block"  alt="Responsive image"/></span>
-							<div class="navbar navbar-inverse">
-								<p> Music <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-6 blanc">
-						<div class="row">
-							<span class="blocimage2"><img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Sports_portal_bar_icon.png" width="40%" height="40%" class="img-responsive center-block" alt="Responsive image"/></span>
-							<div class="navbar navbar-inverse">
-								<p> Profile <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-		
+	</main>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
