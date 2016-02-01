@@ -1,142 +1,178 @@
-
-/*--------------------- LAYOUT ------------------------*/
-.row{
-	margin-right:-15px;
-	margin-left:-15px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	border: 1px solid black;
+body{
+	background-color:#434343;
+	font-weight:bold;
 }
 
-.Barre1 {
-	height: 75px;
+/*-------------------------Le 1er bloc considéré comme un header ---------------*/
+/*---------on crée une boite USER, dans lequel 3 boites : avatar ,Nom, Score -----------*/
+header{
+	background-color:#37BBD2;
+	color:white;
+	height:90px;
+	line-height:90px;
+}
+
+#User{ 
+	display:flex;
+	position:relative;
+	padding-left:20px;
+	padding-top:15px;
 	vertical-align:middle;
-	background-color: #00BFFF;
-	padding: 0px;
-	margin: 0px;
-	color:white;
 }
-
-.center{
-	display: block;
-	width:430px;
-	height:430px;
+#avatar{
+	width:60px;
+	height:60px;
+	margin-right:15px;
+	
+	border-radius:50px;
 }
-
-.blocimage0 {          
-      display : table-cell;
-      vertical-align : middle;
-      text-align:center;
-      width:104px;
-      height:68px;
+#Nom{
+	display:flex;
+	position:absolute;
+	vertical-align:middle;
+	padding-left:20px;
 }
-
-.blocimage1 {          
-      display : table-cell;
-      vertical-align : middle;
-      text-align:center;
-      width:430px;
-      height:466px;
-}
-
-.blocimage2 {         
-      display : table-cell;
-      vertical-align : middle;
-      text-align:center;
-      width:213px;
-      height:214px;
-}
-
-.blocimage3 {         
-      display : table-cell;
-      vertical-align : middle;
-      text-align:center;
-      width:434px;
-      height:214px;
-}
-
-.navbar{
-	display: block;
-	width: 100%;
-	min-height:20px;
-	height: 34px;
-	vertical-align: bottom;
-	padding-left: 30px;
+#Score{
+	display:flex;
+	position:absolute;
+	right:20px;
+	vertical-align:middle;
 	padding-right:20px;
-	margin: auto;
-	text-align:left;
-	opacity: 0.7;
-	border-radius:0px;
-}
-/*-------------------- Usage as a mixin -----------------*/
-img {
-  vertical-align: middle;
-  /*border: 1px solid red;*/
 }
 
-/*--------------------- Mixin ----------------------------*/
-.clearfix() {
-  &:before,
-  &:after {
-    content: " ";
-    display: table;
-  }
-  &:after {
-    clear: both;
-  }
+main{
+	height:90%;
+}
+
+.card{
+	height:285px;
+	position:relative;
+	background-color:#F5F5F5;
+}
+
+.card_content{
+	display:block;
+	max-height:150px;
+}
+
+.card_content_image{
+	display:block;
+	max-height:150px;
+	padding:auto;
+	margin-top:10px;
+	margin-bottom:10px;
+	border-radius:10px;
+}
+.card_footer{
+	height:60px;
+	padding-left:10px;
+	position:absolute;
+	bottom:0;left:0;right:0;
+	background-color:rgba(50,50,50,0.3);
+	line-height:60px;
+}
+
+a{
+	display:block;
+	width:100%;
+	color:white;
+	text-decoration:none;
+}
+
+span{
+	float:right;
+	font-size:15px;
+	padding-right:15px;
+}
+
+.i{
+	line-height:60px;
 }
 
 
-/*--------------------- Usage -----------------------------*/
-.container {
-  .clearfix();
+.col-xs-12, .col-md-4, .col-xs-6{
+	padding-right: 5px;
+	padding-left: 5px;
 }
-.center-block-fleche{
-	margin-top:7px;
-	margin-bottom:7px;
+
+.row{
+	margin-left:-5px;
+	margin-right:-5px;
 	
 }
-.blanc{
-	background-color: white;
-	color:white;
-}
-.gris{
-	background-color: #A0A5A4;
-}
-.jaune{
-	background-color:#ECF407;
-	color:black;
+
+
+/*------------------------- taille des blocs ---------------------------------------*/
+#leaderboard, #geography{
+   	height:580px;
 }
 
-.rouge{
-	background-color:#E9522D;
-	
-}
-.rougeclair{
-	background-color:#E99580;
-	color:white;
+#leaderboard .card_content_image, #geography .card_content_image{
+	max-height:350px;
+	padding-top:35%;
 }
 
-.vert{
-	background-color:#75EC81;
+#entertainment .card_content_image, #sports .card_content_image, #food .card_content_image, #generalknowledge .card_content_image, #science .card_content_image, #tv .card_content_image, #music .card_content_image, #profile .card_content_image{
+	max-height:150px;
+	padding-top:25%;
 }
-.vertclair{
-	background-color:#80EFBB;
-	color:black;
+
+#history .card_content_image{
+	max-height:170px;
+	padding-top:20%;
 }
-.violet{
-	background-color:#AB71ED;
-	color:white;
-}
-.violetclair{
+
+
+/*----------------------------Couleurs des blocs ------------------------------------*/
+
+/*------------------ bloc violet -----------------*/
+#sports, #tv{
 	background-color:#CBB4F3;
 }
-.bleue{
-	background-color:#2383F0;
-	color:white;
+
+#sports .card_footer, #tv .card_footer{
+	background-color:#AB71ED;
 }
 
-.bleueclaire{
-	background-color:#809AEF;
-	color:white;
+/*------------------ bloc rouge -------------------*/
+#entertainment, #geography{
+	background-color:#FA8A7E;
+}
+
+#entertainment .card_footer, #geography .card_footer{
+	background-color:#F8504D;
+}
+
+
+/*------------------ bloc vert ----------------------*/
+#food, #science{
+	background-color: #B7F6C9;
+}
+
+#food .card_footer, #science .card_footer{
+	background-color: #34EBB5;
+	
+}
+#food a, #science a{
+	color:#655F61;
+}
+
+/*------------------- bloc bleu ----------------------*/
+#history, #music{
+	background-color:#7EFEFF;
+}
+#history .card_footer, #music .card_footer{
+	background-color:#3EA8F6;
+}
+
+/*-------------------- bloc jaune ----------------------*/
+#generalknowledge{
+	background-color:#FBFF86;
+}
+#generalknowledge .card_footer{
+	background-color:#FBED1A;
+}
+
+#generalknowledge a{
+	color:#655F61;
 }
