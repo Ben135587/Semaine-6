@@ -4,13 +4,10 @@ p{
 	font-size: 1.2em;
 }
 
-h1, h3{
+h1, h2, h3{
 	text-align:center;
 }
 
-h2{
-	text-align:right;
-}
 
 li {
     text-align:left;
@@ -29,29 +26,46 @@ ul{
 }
 /*-------------------------- LAYOUT -------------------------------*/
 
-.Sidebar
-{
-   	width: 100%;
+#Users{
+   	display:flex;
+	position:relative;
+	width: auto;
     max-width: 960px;
+	height: 150px;
     padding: 10px;
     margin: 15px;
     background: url('http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/footer_lodyas.png') ;
     border-radius: 10px;
 	box-shadow: 2px 3px #D8D8D8;
     border: 1px solid grey;
-	
+	vertical-align:middle;
 	font-family: Courier ;
     text-align: center;
 	color: white;
 }
 
+#Nom_fonction{
+	width:auto;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#avatar{
+	display:block;
+	position:absolute;
+	right:10px;
+	margin-top:15px;
+}
+
 .container{
+	width: auto;
 	max-width:960px;
 }
 
 .contents1{
 	display:flex;
-	width: 100%;
+	width: auto;
     max-width: 960px;
     background: url('http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/ignasi_pattern_s.png') 15px;
     border-radius: 10px;
@@ -60,7 +74,7 @@ ul{
 }
 
 .contents2{
-	width: 100%;
+	width: auto;
     max-width: 960px;
     background: url('http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/mirrored_squares.png') 15px;
     border-radius: 10px;
@@ -71,18 +85,22 @@ ul{
 
 /*-------------------------- PICTURES -------------------------------*/
 
-#photo_moi
-{
-	float: right;
-    width : 75px;
-    height: 100px;
+#photo_moi{
+	width : 75px;
+	max-height: 100px;
     border-radius: 10px; 
-	box-shadow: 1px 1px #D3D3D3;	
-}
-#photo_geek{
-	float: bottom;
-	width: 80px;
-	height: 60px;
-	border-radius: 15px;
+	box-shadow: 1px 1px #D3D3D3;
 }
 
+@media screen and (max-width: 630px)
+{/* Rédigez vos propriétés CSS ici */
+    #Users{
+		height:280px;
+	}
+		
+	#avatar{
+		right:45%;
+		bottom:25px;
+	}
+	
+}
