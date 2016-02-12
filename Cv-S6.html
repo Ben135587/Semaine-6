@@ -3,38 +3,30 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" type="text/css" href="style.css">
-		<link href="bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="bootstrap.min.css" rel="stylesheet">
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".navbar">
 	
 		<header>
-			<div class="Sidebar">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-11">
-							<h1>BELLET Benoît</h1>
-						</div>
-						<div class="col-md-1">	
-							<img src="https://static9.viadeo-static.com/servlet/photo?memberId=0026p460tmx6yae&height=185&width=140&ts=946681200000" id="photo_moi"/>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-8">
-							<h2>- Codeur informatique -</h2>
-						</div>
-						<div class="col-md-2">	
-							<img src="http://www.geekworldtour.com/wp-content/uploads/EvolutionOfGeek_630x315.jpg" id="photo_geek" alt="photo_geek"/>
-						</div>
-						<div class="col-md-2">
-						</div>
-					</div>
+			<div id="Users">
+				<div id="Nom_fonction">
+					<h1>BELLET Benoît</h1>
+					<h2>- Codeur informatique -</h2>
 				</div>
+				<div id="avatar">
+					<img src="https://static9.viadeo-static.com/servlet/photo?memberId=0026p460tmx6yae&height=185&width=140&ts=946681200000" class="img-responsive" id="photo_moi"  alt="Responsive image"/>
+				</div>
+				
 			</div>
+			
 		</header>
 		
 		<main>
+			
 			<div class="contents1">
 				<div class="container">
+					<div class="container-fluid">
+						
 					<div class="row">
 						<div class="col-md-4 col-sd">
 							<h3>EXPERIENCES PROFESSIONNELLES</h3>
@@ -77,6 +69,7 @@
 				</div>
 				
 			</div>
+		
 		</main>
 		
 		<footer>
@@ -92,8 +85,8 @@
 						</div>
 						<div class="col-md-6">
 							<ul>
-								<li>- mail : <a href="mailto:bellet.benoit@gmail.com">bellet.benoit@gmail.com</a></li>
-								<li>- cell : +33634073115 </li>
+								<li><strong>-</strong> mail : <a href="mailto:bellet.benoit@gmail.com">bellet.benoit@gmail.com</a></li>
+								<li><strong>-</strong> cell : 0033 634073115 </li>
 							</ul>
 						</div>
 					</div>
@@ -101,8 +94,7 @@
 			</div>
 		</footer>
 	       
-		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
 		<script src="bootstrap-3.3.6/dist/js/bootstrap.min.js"></script>
-      
 	</body>
 </html>
